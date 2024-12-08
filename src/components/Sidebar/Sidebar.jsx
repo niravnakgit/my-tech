@@ -18,7 +18,7 @@ import CalanderIcon from '@/assets/images/calander-icon.svg';
 
 const Sidebar = ({ isSidebarOpen }) => {
   return (
-    <div className={`w-[264px] lg:w-[234px] shrink-0 bg-white md:fixed md:left-0 md:top-0 md:z-[999] md:shadow-card-shadow sidebar duration-300 -translate-x-full ${isSidebarOpen ? ' translate-x-0' : ''}`}>
+    <div className={`w-[264px] lg:w-[234px] shrink-0 bg-white md:fixed md:left-0 md:top-0 md:z-[999] md:shadow-card-shadow sidebar duration-300 md:-translate-x-full ${isSidebarOpen ? ' md:translate-x-0' : ''}`}>
         <div className=' py-6 px-5 text-center'>
             <Link href="/">
                 <ImgComponent src={Logo} alt="logo" />
